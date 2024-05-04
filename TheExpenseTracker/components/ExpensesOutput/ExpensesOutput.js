@@ -3,7 +3,7 @@ import ExpensesSummary from "./ExpensesSummary";
 import ExpensesList from "./ExpensesList";
 import {GlobalStyles} from "../../constants/styles";
 
-const DUMMY_EXPENSES =[
+const DUMMY_EXPENSES = [
     {
         id: 'e1',
         description: 'a pair of shoes',
@@ -15,18 +15,43 @@ const DUMMY_EXPENSES =[
         description: 'a pair of trousers',
         amount: 89.99,
         date: new Date('2022-12-19')
-    },{
+    }, {
         id: 'e3',
         description: 'bananas',
         amount: 39.99,
         date: new Date('2021-06-20')
-    },{
+    }, {
         id: 'e4',
         description: 'a book',
         amount: 19.99,
         date: new Date('2021-12-09')
-    },{
+    }, {
         id: 'e5',
+        description: 'a cup',
+        amount: 15.99,
+        date: new Date('2023-01-09')
+    }, {
+        id: 'e6',
+        description: 'a cup',
+        amount: 15.99,
+        date: new Date('2023-01-09')
+    }, {
+        id: 'e7',
+        description: 'a cup',
+        amount: 15.99,
+        date: new Date('2023-01-09')
+    }, {
+        id: 'e8',
+        description: 'a cup',
+        amount: 15.99,
+        date: new Date('2023-01-09')
+    }, {
+        id: 'e9',
+        description: 'a cup',
+        amount: 15.99,
+        date: new Date('2023-01-09')
+    }, {
+        id: 'e10',
         description: 'a cup',
         amount: 15.99,
         date: new Date('2023-01-09')
@@ -44,10 +69,12 @@ function ExpensesOutput({expenses, expensesPeriod}) {
 
 export default ExpensesOutput;
 
-const styles =StyleSheet.create({
-    constainer:{
+const styles = StyleSheet.create({
+    constainer: {
         flex: 1,
-        padding: 24,
+        paddingHorizontal: 24,
+        paddingTop: 24,
+        paddingBottom: 0,
         backgroundColor: GlobalStyles.colors.primary700
     }
 })
